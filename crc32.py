@@ -1,5 +1,5 @@
 import binascii
-
+#komentar
 def create_table():
     a = []
     for i in range(256):
