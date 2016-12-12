@@ -8,7 +8,6 @@ def create_table():
             if k & 1:
                 k ^= 0x1db710640
             k >>= 1
-            print(k)
         a.append(k)
     return a
  
@@ -19,4 +18,4 @@ def crc_update(buf, crc):
     return crc ^ 0xffffffff
  
 crc_table = create_table()
-print(hex(crc_update(b"hello-world", 0)))
+print(hex(crc_update(b"blabla", 0)))
